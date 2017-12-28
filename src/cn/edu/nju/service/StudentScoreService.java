@@ -11,4 +11,6 @@ public interface StudentScoreService {
 	 * @return 处理好的包含学生成绩信息的SOAP消息
 	 */
 	SOAPMessage getStudentScoreById(String id, ServletOutputStream out);
+	
+	SOAPMessage modifyStudentScore();
 }

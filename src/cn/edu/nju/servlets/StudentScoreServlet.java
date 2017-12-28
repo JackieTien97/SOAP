@@ -1,6 +1,6 @@
 package cn.edu.nju.servlets;
 
-import java.io.IOException;
+import java.io.*;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -14,7 +14,6 @@ import cn.edu.nju.serviceImpl.StudentScoreServiceImpl;
  * Servlet implementation class StudentScoreServlet
  */
 @WebServlet("/StudentScoreServlet")
-public class StudentScoreServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
     private StudentScoreService scoreService;   
     /**
@@ -37,7 +36,7 @@ public class StudentScoreServlet extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		doGet(request, response);
+		doGet(request,response);
 	}
 
 }

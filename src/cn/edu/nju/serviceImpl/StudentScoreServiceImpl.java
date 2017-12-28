@@ -32,4 +32,10 @@ public class StudentScoreServiceImpl implements StudentScoreService {
 		return null;
 	}
 
+	@Override
+	public SOAPMessage modifyStudentScore() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }
