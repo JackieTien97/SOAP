@@ -14,6 +14,7 @@ import cn.edu.nju.serviceImpl.StudentScoreServiceImpl;
  * Servlet implementation class StudentScoreServlet
  */
 @WebServlet("/StudentScoreServlet")
+public class StudentScoreServlet extends HttpServlet{
 	private static final long serialVersionUID = 1L;
     private StudentScoreService scoreService;   
     /**
