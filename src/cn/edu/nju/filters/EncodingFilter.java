@@ -45,7 +45,7 @@ public class EncodingFilter implements Filter {
 		}
 		
 		BufferedResponse responseWrapper = new BufferedResponse((HttpServletResponse)response);
-		responseWrapper.setContentType("application/soap+xml;charset=utf-8");
+		responseWrapper.setContentType("text/soap+xml;charset=utf-8");
 
 		chain.doFilter(request, responseWrapper);
 		

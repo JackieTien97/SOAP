@@ -30,7 +30,8 @@ public class StudentScoreServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String id = request.getParameter("id");
-		scoreService.getStudentScoreById(id, response.getOutputStream());	
+		scoreService.getStudentScoreById(id, response.getOutputStream());
+		
 	}
 
 	/**
